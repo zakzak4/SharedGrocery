@@ -121,7 +121,7 @@ def line(char="─", width=56):
 def header(title):
     clear()
     line("═")
-    print(f"  🛒  {title}")
+    print(f"    {title}")
     line("═")
     print()
 
@@ -248,7 +248,7 @@ def screen_manage_lists():
 
 def screen_view_list(lid, lname):
     """Read-only view of a list."""
-    header(f"📋  {lname}  [View Only]")
+    header(f"  {lname}  [View Only]")
     items = db_get_items(lid)
 
     if not items:
@@ -273,7 +273,7 @@ def screen_view_list(lid, lname):
 
 def screen_list(lid, lname, current_member_id, current_member_name):
     while True:
-        header(f"📝  {lname}")
+        header(f"  {lname}")
         items = db_get_items(lid)
 
         total  = len(items)

@@ -1,4 +1,4 @@
-# 🛒 Household Grocery List
+# Household Grocery List
 
 A shared CLI grocery list app for multiple household members, built with Python and SQLite.
 
